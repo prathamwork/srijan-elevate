@@ -81,7 +81,7 @@ function ServiceDetail() {
             </h2>
           </div>
           <ul className="md:col-span-7">
-            {s.scope.map((sc, i) => (
+            {s.scope.map((sc: string, i: number) => (
               <li
                 key={sc}
                 className="flex items-baseline justify-between border-t border-line py-5 text-lg last:border-b"
@@ -105,7 +105,7 @@ function ServiceDetail() {
             </h2>
           </div>
           <ul className="md:col-span-7 grid gap-0">
-            {s.deliverables.map((d, i) => (
+            {s.deliverables.map((d: string, i: number) => (
               <li
                 key={d}
                 className="flex items-baseline justify-between border-t border-line py-5 text-lg last:border-b"
